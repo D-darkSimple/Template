@@ -1,8 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body {
-  background-color: rebeccapurple;
+  font-family: "Poppins", sans-serif;
 }
+:root {
+  --color-text-menu: #fb8500;
+}
+/* !----------------------- */
+/* *           swiper js */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+/* !----------------------- */
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  font-size: 18px;
+  color: #ddd;
+  padding: 7px 18px;
+  border: none;
+  outline: none;
+  background-color: #c4c4c449;
+}
+/* !----------------------- */
+.header-bar {
+  width: 100%;
+  background-color: black;
+}
+.header-bar .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header-bar .navbar .logo img {
+  height: 45px;
+  object-fit: cover;
+  margin-top: 14px;
+}
+.header-bar .navbar .navbar-nav {
+  display: flex;
+  align-content: center;
+  line-height: 70px;
+}
+.header-bar .navbar .navbar-nav ul {
+  display: flex;
+  list-style: none;
+}
+.header-bar .navbar .navbar-nav ul .nav-item {
+  margin-right: 10px;
+}
+.header-bar .navbar .navbar-nav ul .nav-item .nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 4px 20px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.header-bar .navbar .navbar-nav .search .btn-search {
+  width: 300px;
+  margin-left: 20px;
+  border-radius: 40px;
+}
+.header-bar .navbar .navbar-nav .search {
+  position: relative;
+}
+.header-bar .navbar .navbar-nav .search i {
+  font-size: 20px;
+  color: #dfdfdfe6;
+  /* background-color: #fff7006a; */
+  padding: 8px 15px;
+  border-radius: 40px;
+  position: absolute;
+  right: 0px;
+  top: 17px;
+}
+.header-bar .navbar .navbar-nav ul .nav-item .nav-link:hover {
+  color: var(--color-text-menu);
+}
+.header-bar .navbar .navbar-nav .search .btn-search:focus {
+  border: 2px solid purple;
+}
+.header-bar .navbar .navbar-nav .search .btn-search:focus ~ i {
+  border-left: 2px solid purple;
+}
+/* !---------------------------- */
+.hero-banner {
+  width: 100%;
+  height: 92vh;
+}
+.hero-banner .banner {
+  width: 100%;
+  height: 100%;
+}
+/* *********************** */
+.hero-banner .banner img {
+  object-fit: cover;
+  background-size: cover;
+  position: absolute;
+}
+.hero-banner .banner .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000000b4;
+  position: absolute;
+}
+
+.hero-banner .banner .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.hero-banner .banner .content .banner-title {
+  width: 900px;
+  text-align: center;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-banner .bannerr .content .banner-title h1 {
+  font-size: 35px;
+}
+.hero-banner .banner .content .banner-title p {
+  margin: 20px 0px;
+  font-size: 18px;
+  margin-bottom: 35px;
+  line-height: 27px;
+  color: #c6c6c6;
+}
+.hero-banner .banner .swiper .swiper-pagination-bullet {
+  width: 40px;
+  height: 3px;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+.swiper-button-next {
+  color: #ddd !important;
+}
+.swiper-button-prev {
+  color: #ddd !important;
+}
+/* *********************** */
