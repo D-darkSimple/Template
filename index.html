@@ -52,7 +52,7 @@
       <section class="hero-banner">
         <div class="banner">
           <!-- Swiper -->
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper-banner">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="image/Img_Template/2.jpg" alt="" />
@@ -97,37 +97,135 @@
           </div>
         </div>
       </section>
+      <!-- !---------------------------------- -->
+      <section class="sponsor">
+        <div class="swiper mySwiper-sponsor">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/1.png" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/2.png" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/3.png" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/4.png" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/5.png" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/6.png" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/7.jpg" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/8.png" alt="" />
+            </div>
+            <div class="swiper-slide pic-sponsor">
+              <img src="image/sponsor/9.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !---------------------------------------- -->
+      <section class="template">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h1>Template</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !-------------------------------------- -->
+      <section class="trending template">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h1>Trending</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !-------------------------------------- -->
+      <section class="Best Website template">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h1>Best Website</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+            <div class="col-3">
+              <div class="card"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <br /><br /><br /><br /><br /><br /><br /><br />
     <!-- !----------------------- -->
     <!-- *----------------------- -->
     <script src="vendor/js/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      const progressCircle = document.querySelector(".autoplay-progress svg");
-      const progressContent = document.querySelector(".autoplay-progress span");
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
-        on: {
-          autoplayTimeLeft(s, time, progress) {
-            progressCircle.style.setProperty("--progress", 1 - progress);
-            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-          },
-        },
-      });
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
