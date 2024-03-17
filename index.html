@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="vendor/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="vendor/css/hover.css" />
+    <link rel="stylesheet" href="vendor/css/plyr.css" />
   </head>
   <body>
     <!-- !--------------------------- -->
@@ -231,20 +232,68 @@
           <div class="row">
             <div class="col-4">
               <div class="card">
-                <div class="box-video">
+                <div class="box-video player">
                   <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/4eeoleNpEL8?si=PwTboaDsyN41Nc3f"
+                    src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=C_9lf4QoT6BEZdsN"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                   ></iframe>
-                  <!-- <video src="1-rainbow-circles.mp4" controls></video> -->
+                  <!-- <video src="" controls></video> -->
                 </div>
                 <div class="video-title">
-                  <a href="1-rainbow-circles.mp4" download=""> video_name </a>
+                  <span>HTML & CSS Full Course for free 🌎 (2023)</span>
+                  <a href="#">
+                    By : Bro Code
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="box-video player1">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/A74TOX803D0?si=nhHi56c0XUs9Z3jc"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <!-- <video src="" controls></video> -->
+                </div>
+                <div class="video-title">
+                  <span>Java Programming for Beginners – Full Course</span>
+                  <a href="#">
+                    By : freeCodeCamp.org
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="box-video player2">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/BUCiSSyIGGU?si=zW4XvGoEP83C-SGQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <!-- <video src="" controls></video> -->
+                </div>
+                <div class="video-title">
+                  <span>PHP For Beginners | 3+ Hour Crash Course</span>
+                  <a href="#">
+                    By : Traversy Media
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -270,5 +319,11 @@
     <!-- *----------------------- -->
     <script src="vendor/js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="vendor/js/plyr.js"></script>
+    <script>
+      const player = new Plyr(".player");
+      const player1 = new Plyr(".player1");
+      const player2 = new Plyr(".player2");
+    </script>
   </body>
 </html>

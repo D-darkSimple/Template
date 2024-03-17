@@ -341,19 +341,22 @@ img {
 }
 /* !------------------------------ */
 .video .title h1 {
-  width: 150px;
-  background-color: #fb8500;
+  width: 130px;
+  background-color: #184e77;
 }
 .video .title {
-  border-bottom: 3px solid #fb8500;
+  border-bottom: 3px solid #184e77;
 }
 .video .card {
   height: 300px;
 }
 .video .card .box-video {
   width: 100%;
-  height: 250px;
-  background-color: black;
+  height: 230px;
+}
+.video .card .plyr__video-wrapper {
+  width: 100%;
+  height: 230px;
 }
 .video .card .box-video iframe {
   width: 100%;
@@ -362,4 +365,38 @@ img {
 .video .card .box-video video {
   width: 100%;
   height: 100%;
+}
+.video .card .video-title {
+  width: 100%;
+  height: 70px;
+  background-color: #184e77;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-top: 2px solid #ddd;
+}
+.video .card .video-title a {
+  font-size: 17px;
+  color: #ddd;
+  text-decoration: none;
+}
+.video .card .video-title a i {
+  font-size: 20px;
+  color: red;
+}
+.video .card .video-title a:hover {
+  text-decoration: underline;
+  color: #00fff2;
+}
+.video .see-more-btn a {
+  color: #184e77;
+  border: 3px solid #184e77;
+}
+.video .see-more-btn .hvr-bounce-to-right::before {
+  background-color: #184e77;
+}
+.video .see-more-btn a:hover {
+  color: #ffffff;
 }
