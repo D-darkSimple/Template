@@ -10,6 +10,64 @@ body {
 :root {
   --color-text-menu: #fb8500;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col-3 {
+  width: 23%;
+}
+.col-4 {
+  width: 32%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.border-container {
+  /* border-radius: 10px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1.95px 0px;
+}
+.form-search {
+  font-size: 18px;
+  color: #ddd;
+  padding: 7px 18px;
+  border: none;
+  outline: none;
+  background-color: #c4c4c449;
+}
+.btn {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 25px;
+  overflow: hidden;
+}
+.see-more-btn a {
+  border-radius: 40px;
+}
+.card {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.btn-card {
+  border: 1px solid #ff006e;
+  margin: 0px 10px;
+  border-radius: 10px;
+}
 /* !----------------------- */
 /* *           swiper js */
 .swiper {
@@ -58,30 +116,6 @@ body {
   transform: rotate(-90deg);
 }
 /* !----------------------- */
-.container {
-  width: 1200px;
-  margin: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.col-3 {
-  width: 23%;
-}
-.col-12 {
-  width: 100%;
-}
-
-.btn {
-  font-size: 18px;
-  color: #ddd;
-  padding: 7px 18px;
-  border: none;
-  outline: none;
-  background-color: #c4c4c449;
-}
 /* !----------------------- */
 .header-bar {
   width: 100%;
@@ -116,7 +150,7 @@ body {
   font-weight: 600;
   border-radius: 25px;
 }
-.header-bar .navbar .navbar-nav .search .btn-search {
+.header-bar .navbar .navbar-nav .search .form-search {
   width: 300px;
   margin-left: 20px;
   border-radius: 40px;
@@ -137,10 +171,10 @@ body {
 .header-bar .navbar .navbar-nav ul .nav-item .nav-link:hover {
   color: var(--color-text-menu);
 }
-.header-bar .navbar .navbar-nav .search .btn-search:focus {
+.header-bar .navbar .navbar-nav .search .form-search:focus {
   border: 2px solid purple;
 }
-.header-bar .navbar .navbar-nav .search .btn-search:focus ~ i {
+.header-bar .navbar .navbar-nav .search .form-search:focus ~ i {
   border-left: 2px solid purple;
 }
 /* !---------------------------- */
@@ -233,23 +267,74 @@ body {
   border-bottom: 3px solid #ff006e;
 }
 .template .title h1 {
-  font-size: 28 px;
+  font-size: 22px;
   width: 185px;
   text-align: center;
   background-color: #ff006e;
   color: white;
   clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
 }
+
 .template .card {
   margin-top: 40px;
-  width: 100%;
   height: 400px;
-  background-color: #ff006e;
-  border-radius: 10px;
-  transition: 0.5s;
+  /* border: 1px solid #ff006e; */
 }
+.template .card .pic {
+  width: 100%;
+  height: 300px;
+  background-color: rebeccapurple;
+}
+
+.template .card .title-card h3 {
+  font-size: 18px;
+  margin: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+.template .card .button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.template .card .button a {
+  color: #ff006e;
+}
+
+.template .card .button .hvr-bounce-to-right::before {
+  background-color: #ff006e;
+}
+.template .card .button a:hover {
+  color: #ffffff;
+}
+.template .card .button a:last-child:hover {
+  border: 1px solid blue;
+}
+.template .card .button a:last-child:hover {
+  color: white;
+}
+.template .card .button .hvr-bounce-to-left::before {
+  background-color: blue;
+}
+/* --------------------------- */
 .template .card:hover {
-  transform: scale(1.05);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: scale(102%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.template .see-more-btn {
+  text-align: right;
+  margin: 30px;
+}
+.template .see-more-btn a {
+  color: #ff006e;
+  border: 3px solid #ff006e;
+}
+.template .see-more-btn .hvr-bounce-to-right::before {
+  background-color: #ff006e;
+}
+.template .see-more-btn a:hover {
+  color: #ffffff;
 }
