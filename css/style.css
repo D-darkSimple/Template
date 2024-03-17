@@ -304,7 +304,7 @@ img {
 }
 
 .template .card .button .hvr-bounce-to-right::before {
-  background-color: #ff006e;
+  background-color: #ff006e !important;
 }
 .template .card .button a:hover {
   color: #ffffff;
@@ -316,7 +316,7 @@ img {
   color: white;
 }
 .template .card .button .hvr-bounce-to-left::before {
-  background-color: blue;
+  background-color: blue !important;
 }
 /* --------------------------- */
 .template .card:hover {
