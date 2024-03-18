@@ -7,6 +7,36 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.responsive {
+  width: 100%;
+  height: 100vh;
+  background-color: violet;
+}
+.responsive h1 {
+  height: 100vh;
+  font-size: 25px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .responsive {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .responsive {
+    display: block;
+  }
+  header {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+}
+
 :root {
   --color-text-menu: #fb8500;
 }
