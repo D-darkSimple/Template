@@ -384,13 +384,9 @@ img {
   width: 100%;
   height: 230px;
 }
-.video .card .plyr__video-wrapper {
+.video .plyr {
   width: 100%;
   height: 230px;
-}
-.video .card .box-video iframe {
-  width: 100%;
-  height: 100%;
 }
 .video .card .box-video video {
   width: 100%;
